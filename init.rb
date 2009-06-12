@@ -1,0 +1,1 @@
+require 'erubis_rails_helper'
