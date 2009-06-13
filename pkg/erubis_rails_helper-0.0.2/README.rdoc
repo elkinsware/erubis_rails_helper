@@ -1,14 +1,15 @@
 = erubis_rails_helper
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/elkinsware/erubis_rails_helper/tree/master
 
 == DESCRIPTION:
 
-FIX (describe your package)
+This is a fix for Erubis integration with Rails 2.3.  It is a drop in replacement for the rails helper in the Erubis gem.
+The fix is minor and I am submitting it to Erubis but until it is fixed this will work.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Drop in replacement for the Erubis Rails Helper in the Erubis gem.
 
 == SYNOPSIS:
 
@@ -16,17 +17,18 @@ FIX (describe your package)
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Rails 2.3
+* Erubis 2.6.4
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install elkinsware-erubis_rails_helper
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 Dave Elkins (elkinsware)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
