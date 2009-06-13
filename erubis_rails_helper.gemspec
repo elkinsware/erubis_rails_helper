@@ -12,6 +12,9 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
+  s.files = [
+    "lib/erubis_rails_helper.rb"
+  ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/elkinsware/erubis_rails_helper/tree/master}
   s.rdoc_options = ["--charset=UTF-8"]

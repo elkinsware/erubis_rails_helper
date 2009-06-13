@@ -42,7 +42,10 @@ begin
     gemspec.authors = ["Dave Elkins"]
     
     gemspec.add_dependency('actionpack', '>= 2.2.2')
-    gemspec.add_dependency('erubis', '>= 2.6.2')    
+    gemspec.add_dependency('erubis', '>= 2.6.2')
+    
+    gemspec.files = FileList['lib/*.rb']
+
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
