@@ -1,7 +1,3 @@
-module ErubisRailsHelper
-  VERSION = '0.0.2'
-end
-
 begin
   require 'action_controller'
   require 'action_view'
