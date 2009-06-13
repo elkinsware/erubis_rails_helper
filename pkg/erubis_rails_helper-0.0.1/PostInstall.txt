@@ -1,3 +1,0 @@
-
-For more information on erubis_rails_helper, see http://github.com/elkinsware/erubis_rails_helper/tree/master
-
