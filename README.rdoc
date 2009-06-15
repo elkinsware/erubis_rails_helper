@@ -20,12 +20,13 @@ get the code to work with Rails 2.3.
   inside config/environment.rb and the following
      config.gem 'erubis' , :version => '2.6.4'
      config.gem 'erubis_rails_helper'
-     
+  
+  #you can customize some of the options for Erubis still if you want to.
   add config/initializers/erubis_config.rb
      #Erubis::Helpers::RailsHelper.engine_class = Erubis::Eruby # or Erubis::FastEruby
      #Erubis::Helpers::RailsHelper.init_properties = {}
-     Erubis::Helpers::RailsHelper.show_src = false
-     Erubis::Helpers::RailsHelper.preprocessing = true  
+     #Erubis::Helpers::RailsHelper.show_src = false
+     #Erubis::Helpers::RailsHelper.preprocessing = true  
      
 == REQUIREMENTS:
 
