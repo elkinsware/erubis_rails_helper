@@ -7,6 +7,9 @@
 This is a fix for Erubis integration with Rails 2.3.  It is a drop in replacement for the rails helper in the Erubis gem.
 The fix is minor and I am submitting it to Erubis but until it is fixed this will work.
 
+The code is a copy of the rails_helper in Erubis 2.6.4 with a couple of slight modifications to
+get the code to work with Rails 2.3.
+
 == FEATURES/PROBLEMS:
 
 * Drop in replacement for the Erubis Rails Helper in the Erubis gem.
