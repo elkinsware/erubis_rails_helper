@@ -19,7 +19,7 @@ get the code to work with Rails 2.3.
   FIX (code sample of usage)
   inside config/environment.rb and the following
      config.gem 'erubis' , :version => '2.6.4'
-     config.gem 'erubis_rails_helper'
+     config.gem 'elkinsware-erubis_rails_helper', :lib => 'erubis_rails_helper', :source => 'http://gems.github.com'
   
   #you can customize some of the options for Erubis still if you want to.
   add config/initializers/erubis_config.rb

@@ -1,127 +1,112 @@
-/!\ FAILSAFE /!\  Fri Jun 12 22:53:32 -0500 2009
-  Status: 500 Internal Server Error
-  no such file to load -- sqlite3
-    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:156:in `require'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:156:in `require'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
-    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
-    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:159:in `process_client'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:158:in `each'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:158:in `process_client'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `initialize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `new'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `initialize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `new'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:282:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:281:in `each'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:281:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/mongrel_rails:128:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/command.rb:212:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/mongrel_rails:281
-    c:/ruby/bin/mongrel_rails:19:in `load'
-    c:/ruby/bin/mongrel_rails:19
-/!\ FAILSAFE /!\  Fri Jun 12 22:57:30 -0500 2009
-  Status: 500 Internal Server Error
-  Unknown database 'exampleapp_development'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
-    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
-    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:159:in `process_client'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:158:in `each'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:158:in `process_client'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `initialize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `new'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:285:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `initialize'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `new'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel.rb:268:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:282:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:281:in `each'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/configurator.rb:281:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/mongrel_rails:128:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/../lib/mongrel/command.rb:212:in `run'
-    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/bin/mongrel_rails:281
-    c:/ruby/bin/mongrel_rails:19:in `load'
-    c:/ruby/bin/mongrel_rails:19
+** Erubis 2.6.4
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing WelcomeController#index (for 127.0.0.1 at 2009-06-12 22:58:45) [GET]
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 12:50:00) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
 Rendering welcome/index
-Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+*************CONTENT in CAPTURE 
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 12:52:52) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 12:53:48) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 12:57:30) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.<<) on line #14 of app/views/welcome/index.html.erb:
+11: 
+12: <h3>form_for and form_tag example</h3>
+13: <p>
+14: 	<% form_tag({:controller => "welcome", :action => "index"}, {:method => :get}) do %>
+15: 		Field 1: <%=text_field_tag(:field_1, nil, :class=> "field", :tabindex => 1)%>
+16: 		Field 2: <%=text_field_tag(:field_2, nil, :class=>"field", :id=>"field_2", :tabindex => 2)%>
+17: 		<%=submit_tag("submit for form_tag")%>
+
+    app/views/welcome/index.html.erb:14
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 12:58:18) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+
+ActionView::TemplateError (undefined method `output_buffer=' for #<ActionView::TemplateHandlers::ErubisHandler:0x48fa170>) in app/views/welcome/index.html.erb:
+
+    (erubis):1:in `evaluate'
+    erubis (2.6.4) lib/erubis/evaluator.rb:75:in `instance_eval'
+    erubis (2.6.4) lib/erubis/evaluator.rb:75:in `evaluate'
+    c:/ruby/lib/ruby/gems/1.8/gems/elkinsware-erubis_rails_helper-0.2.0/lib/erubis_rails_helper.rb:118:in `_convert_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/elkinsware-erubis_rails_helper-0.2.0/lib/erubis_rails_helper.rb:175:in `compile'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 13:05:11) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 13:15:34) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-15 13:23:44) [POST]
+  Parameters: {"commit"=>"submit for form_for", "authenticity_token"=>"ZIvYuO9L3qIol+KmPcSRFu9GhCTO+6U63BZ+UjaP6+o=", "test_model"=>{"field_1"=>"adfadsf", "field_2"=>""}}
+Rendering welcome/index
+############ output_buffer (in capture_helper.with_output_buffer) = ""
+*************CONTENT in CAPTURE 
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/]

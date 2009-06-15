@@ -1,7 +1,8 @@
-begin
-  require 'action_controller'
-  require 'action_view'
-rescue LoadError
+#This code is a copy of /lib/erubis/helper/rails_helper.rb from Erubis 2.6.4 as a base and then some modifications
+# to make it work with Rails 2.3.  The only significant change is the addition of OutputBufferEnhancer module
+# and including this module in the Eruby and FastEruby class.
+
+if defined?(Rails) and defined?(ActionController)
   $stderr.puts %[This erubis_rails requires actionpack 2.2.2 or higher]
 end
 
@@ -14,23 +15,27 @@ rescue LoadError
 end  
 
 module Erubis
+
+  #FOR_FIX: Added to make Erubis and Rails 2.3 work together
   module OutputBufferEnhancer
 
     def self.desc   # :nodoc:
-      "set '@output_buffer = _buf = \"\";'"
+      "set 'output_buffer = _buf = \"\";'"
     end
 
     def add_preamble(src)
-      src << "__in_erubis_template=true; @output_buffer = _buf = '';"
+      src << "__in_erubis_template=true; output_buffer = _buf = '';"
     end
 
   end
   
+  #FOR_FIX: Changed to make Erubis and Rails 2.3 work together
   class Eruby
     #include ErboutEnhancer      # will generate '_erbout = _buf = ""; '
     include OutputBufferEnhancer
   end
 
+  #FOR_FIX: Changed to make Erubis and Rails 2.3 work together
   class FastEruby
     #include ErboutEnhancer      # will generate '_erbout = _buf = ""; '
     include OutputBufferEnhancer 
@@ -367,6 +372,7 @@ end   ###
 
 
 ## finish
+#FOR_FIX: Changed this for logging and feedback that this gem is being loaded on startup
 if defined?(Rails) and defined?(ActionController)
   ActionController::Base.new.logger.info "** Erubis #{::Erubis::VERSION}"
 end
