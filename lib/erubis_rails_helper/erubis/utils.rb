@@ -5,7 +5,7 @@ module Erubis
         preprocessor = _create_preprocessor(template)
         template = preprocessor.evaluate(_preprocessing_context_object())        
         
-        properties = {}
+        properties = {:eoutvar => "@output_buffer"}
         src = ::Erubis::Eruby.new(template, properties).src
         return src
       end

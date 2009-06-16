@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "lib/erubis_rails_helper.rb",
      "lib/erubis_rails_helper/erubis/enhancers.rb",
      "lib/erubis_rails_helper/erubis/eruby.rb",
+     "lib/erubis_rails_helper/erubis/generator.rb",
      "lib/erubis_rails_helper/erubis/utils.rb",
      "lib/erubis_rails_helper/helpers/capture_helper.rb",
      "lib/erubis_rails_helper/template_handlers/erubis.rb"

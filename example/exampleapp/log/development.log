@@ -1143,3 +1143,56 @@ ActionView::TemplateError (undefined method `xtext_field_tag' for #<ActionView::
 Rendered rescues/_trace (94.0ms)
 Rendered rescues/_request_and_response (15.0ms)
 Rendering rescues/layout (internal_server_error)
+** Erubis 2.6.4
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-06-16 16:42:38) [GET]
+Rendering welcome/index
+** Erubis: src==<<'END'
+__in_erubis_template=true; @output_buffer = _buf = ''; @output_buffer << '<h1>A test example for the erubis_rails_helper.</h1>
+<p>This is to be used a test to see Erubis and Rails are working together.</p>
+
+
+<h2>Things to show that work</h2>
+<ul>
+<li>erubis examples</li>
+<li>form_for</li>
+<li>link_to</li>
+</ul>
+
+<h3>form_tag example</h3>
+<p>
+'; form_tag({:controller => "welcome", :action => "index"}, {:method => :get}) do 
+ @output_buffer << '		Field 1: '; @output_buffer << (text_field_tag(:field_1, nil, :class=> "field", :tabindex => 1)).to_s; @output_buffer << '
+'; @output_buffer << '		Field 2: '; @output_buffer << (text_field_tag(:field_2, nil, :class=>"field", :id=>"field_2", :tabindex => 2)).to_s; @output_buffer << '
+'; @output_buffer << (submit_tag("submit for form_tag")).to_s; @output_buffer << '
+'; end 
+ @output_buffer << '</p>
+<h3>form_for example</h3>
+<p>
+'; form_for :test_model, @test_model, :url => {:controller => "welcome", :action => "index"}, :html => {:id => 'form_for_example'} do |f| 
+ @output_buffer << '		Field 1:</label> '; @output_buffer << (f.text_field 'field_1', :size => 26 ).to_s; @output_buffer << '
+'; @output_buffer << '<label>Field 2:</label> '; @output_buffer << (f.text_field 'field_2', :size => 26 ).to_s; @output_buffer << '
+'; @output_buffer << (submit_tag("submit for form_for")).to_s; @output_buffer << '
+'; end 
+ @output_buffer << '</p>
+
+<h3>link_to example</h3>
+<p>
+'; @output_buffer << ( link_to('link to welcome page', :action => 'index') ).to_s; @output_buffer << '
+'; @output_buffer << '</p>
+
+<h3>erubis examples</h3>
+<p>
+<ul>
+'; 1.upto(10) do |item| 
+ @output_buffer << '<li>'; @output_buffer << ( item ).to_s; @output_buffer << '</li>
+'; end 
+
+ @output_buffer << '</ul>
+</p>';
+_buf.to_s
+END
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]

@@ -10,6 +10,7 @@ rescue LoadError
                  Add "config.gem 'erubis', :version => 2.6.4" to config/environment.rb]
 end  
 
+require 'erubis_rails_helper/erubis/generator'
 require 'erubis_rails_helper/erubis/enhancers'
 require 'erubis_rails_helper/erubis/eruby'
 require 'erubis_rails_helper/erubis/utils'
