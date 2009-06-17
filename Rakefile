@@ -12,8 +12,8 @@ begin
     gemspec.add_dependency('erubis', '>= 2.6.2')
     
     gemspec.files = FileList[
-    				'lib/*.rb','lib/erubis_rails_helper/erubis/*.rb',
-    				'lib/erubis_rails_helper/helpers/*.rb',
+    				'lib/*.rb',
+    				'lib/erubis_rails_helper/erubis/*.rb',
     				'lib/erubis_rails_helper/template_handlers/*.rb'
     			    ]
 
