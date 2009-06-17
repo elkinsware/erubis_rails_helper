@@ -1,8 +1,0 @@
-<h3>form_tag example</h3>
-<p>
-	<%- form_tag({:controller => "welcome", :action => "index"}, {:method => :get}) do -%>
-		Field 1: <%=text_field_tag(:field_1, nil, :class=> "field", :tabindex => 1)%>
-		Field 2: <%=text_field_tag(:field_2, nil, :class=>"field", :id=>"field_2", :tabindex => 2)%>
-		<%=submit_tag("submit for form_tag")%>
-	<%- end -%>
-</p>
