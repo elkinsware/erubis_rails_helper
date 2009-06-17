@@ -140,8 +140,8 @@ module Erubis
     ##  
     module RailsHelper
       #cattr_accessor :init_properties
-      #@@engine_class = ::Erubis::Eruby
-      @@engine_class = ::Erubis::FastEruby
+      @@engine_class = ::Erubis::Eruby
+      #@@engine_class = ::Erubis::FastEruby
       def self.engine_class
         @@engine_class
       end

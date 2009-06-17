@@ -41,8 +41,6 @@ Rails::Initializer.run do |config|
   
   config.gem 'erubis' , :version => '2.6.4'
   
-  config.gem 'erubis_rails_helper'
-  #config.gem 'elkinsware-erubis_rails_helper', :lib => 'erubis_rails_helper', :source => 'http://gems.github.com'
-  
-  #config.gem 'methodmissing-erubis_template_handler', :lib => 'erubis_template_handler', :source => 'http://gems.github.com'
+  #config.gem 'erubis_rails_helper'
+  config.gem 'elkinsware-erubis_rails_helper', :lib => 'erubis_rails_helper', :source => 'http://gems.github.com'
 end

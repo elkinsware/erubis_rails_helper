@@ -5,14 +5,18 @@
 == DESCRIPTION:
 
 This is a fix for Erubis integration with Rails 2.3.  It is a drop in replacement for the rails helper in the Erubis gem.
-The fix is minor and I am submitting it to Erubis but until it is fixed this will work.
 
-The code is a copy of the rails_helper in Erubis 2.6.4 with a couple of slight modifications to
-get the code to work with Rails 2.3.
+The code makes a few tweaks to the Erubis 2.6.4 Rails Helper along with the Generator class.  The main issue with getting
+Erubis and Rails 2.3 to work together is to replace "_buf" with "@output_buffer" in the generator code.  Rails 2.3 relies on
+for "@output_buffer" to be used in the generated code to make helpers like capture_helper.rb work properly.
 
 == FEATURES/PROBLEMS:
 
 * Drop in replacement for the Erubis Rails Helper in the Erubis gem.
+
+* Using the tests from actionpack-2.3, this passes all but two tests currently.  The two failures are because
+  there are two end of line characters instead of one end of line characters.  I think that is none critical for 
+  the moment.
 
 == SYNOPSIS:
 
