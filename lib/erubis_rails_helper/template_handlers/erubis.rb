@@ -130,7 +130,7 @@ module ActionView
         src =  _convert_template("#{template.source}") 
         
         if show_source?
-          logger.debug("** Erubis: src==<<'END'\n#{src}END\n")
+          logger.debug("** Erubis: src==<<'END'\n#{src}END\n") if logger
         end
         
         # Ruby 1.9 prepends an encoding to the source. However this is

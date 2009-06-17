@@ -1,11 +1,4 @@
-require File.dirname(__FILE__) + '/test_helper.rb'
-
-class TestErubisRailsHelper < Test::Unit::TestCase
-
-  def setup
-  end
-  
-  def test_truth
-    assert true
-  end
+Dir.glob("template/*_test.rb").sort.each do |file_path|
+  puts "#{file_path}\n"
+  require file_path
 end
