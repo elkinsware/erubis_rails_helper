@@ -11,10 +11,6 @@ rescue LoadError
 end  
 
 require 'erubis_rails_helper/erubis/generator'
-require 'erubis_rails_helper/erubis/enhancers'
-require 'erubis_rails_helper/erubis/eruby'
-require 'erubis_rails_helper/erubis/utils'
-require 'erubis_rails_helper/helpers/capture_helper'
 require 'erubis_rails_helper/template_handlers/erubis'
 
 ## finish

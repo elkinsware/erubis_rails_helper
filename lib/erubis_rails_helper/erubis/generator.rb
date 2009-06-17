@@ -1,4 +1,11 @@
 ##
+## This is a copy of the generator.rb from the Erubis 2.6.4 gem
+## The modification I made was that you can substitute any variable name (i.e. @output_buffer) for _buf.
+## This is necessary for Erubis to work with Rails 2.3 and 2.2 because ActionView code like CaptureHelper
+## relies on @output_buffer to be used and not _buf to work correctly.
+##
+
+##
 ## $Rev: 77 $
 ## $Release: 2.6.4 $
 ## copyright(c) 2006-2009 kuwata-lab.com all rights reserved.
@@ -21,7 +28,9 @@ module Erubis
 
     def init_generator(properties={})
       super
+      
       @escapefunc ||= "Erubis::XmlHelper.escape_xml"
+      
       set_eoutvar(properties[:eoutvar] || '_buf')
     end
 
@@ -45,7 +54,7 @@ module Erubis
 
     def add_text(src, text)
       #src << " _buf << '" << escape_text(text) << "';" unless text.empty?
-      src << " #{@eoutvar} << '" << escape_text(text) << "';" unless text.empty?
+      src << " #{eoutvar} << '" << escape_text(text) << "';" unless text.empty?
     end
 
     def add_stmt(src, code)
@@ -56,12 +65,12 @@ module Erubis
 
     def add_expr_literal(src, code)
       #src << ' _buf << (' << code << ').to_s;'
-      src << " #{@eoutvar} << (" << code << ").to_s;"
+      src << " #{eoutvar} << (" << code << ").to_s;"
     end
 
     def add_expr_escaped(src, code)
       #src << ' _buf << ' << escaped_expr(code) << ';'
-      src << " #{@eoutvar} << " << escaped_expr(code) << ';'
+      src << " #{eoutvar} << " << escaped_expr(code) << ';'
     end
 
     def add_expr_debug(src, code)
@@ -77,6 +86,9 @@ module Erubis
     #++
 
     private
+    ##
+    ## Added to set the buffer variable name. defaults to _buf.
+    ##
     def set_eoutvar(new_eoutvar = '_buf')
       @eoutvar = new_eoutvar
     end
@@ -85,46 +97,4 @@ module Erubis
       @eoutvar || '_buf'
     end
   end
-
-  #~ ##
-  #~ ## engine for Ruby
-  #~ ##
-  #~ class Eruby < Basic::Engine
-    #~ include RubyEvaluator
-    #~ include RubyGenerator
-  #~ end
-
-  #~ ##
-  #~ ## fast engine for Ruby
-  #~ ##
-  #~ class FastEruby < Eruby
-    #~ include InterpolationEnhancer
-  #~ end
-
-  #~ ##
-  #~ ## swtich '<%= %>' to escaped and '<%== %>' to not escaped
-  #~ ##
-  #~ class EscapedEruby < Eruby
-    #~ include EscapeEnhancer
-  #~ end
-
-  #~ ##
-  #~ ## sanitize expression (<%= ... %>) by default
-  #~ ##
-  #~ ## this is equivalent to EscapedEruby and is prepared only for compatibility.
-  #~ ##
-  #~ class XmlEruby < Eruby
-    #~ include EscapeEnhancer
-  #~ end
-
-  #~ class PI::Eruby < PI::Engine
-    #~ include RubyEvaluator
-    #~ include RubyGenerator
-
-    #~ def init_converter(properties={})
-      #~ @pi = 'rb'
-      #~ super(properties)
-    #~ end
-
-  #~ end
 end
