@@ -1,4 +1,4 @@
-if defined?(Rails) and defined?(ActionController)
+unless defined?(Rails) and defined?(ActionController)
   $stderr.puts %[This erubis_rails requires actionpack 2.2.2 or higher]
 end
 
