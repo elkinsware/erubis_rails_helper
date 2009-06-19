@@ -211,6 +211,18 @@ module Erubis
   end
 end
 
+class ActionView::Base   # :nodoc:
+  include ::Erubis::Helpers::RailsHelper::TemplateConverter
+  include ::Erubis::PreprocessingHelper
+  
+  private
+  # convert template into ruby code
+  def convert_template_into_ruby_code(template)
+    #ERB.new(template, nil, @@erb_trim_mode).src
+    return _convert_template(template)
+  end
+end
+
 module ActionView
   module TemplateHandlers
     class Erubis < TemplateHandler
