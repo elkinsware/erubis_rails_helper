@@ -231,7 +231,7 @@ module ActionView
       include ::Erubis::PreprocessingHelper
 
       def compile(template)
-        src =  _convert_template("#{template.source}") 
+        src =  _convert_template("<% __in_erb_template=true %>#{template.source}") 
         
         if show_source?
           logger.debug("** Erubis: src==<<'END'\n#{src}END\n") if logger
