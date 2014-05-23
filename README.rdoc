@@ -26,6 +26,7 @@ for "@output_buffer" to be used in the generated code to make helpers like captu
   
   #you can customize some of the options for Erubis still if you want to by
   #add config/initializers/erubis_config.rb
+     require 'erubis_rails_helper'
      #Erubis::Helpers::RailsHelper.engine_class = Erubis::Eruby # or Erubis::FastEruby
      #Erubis::Helpers::RailsHelper.init_properties = {}
      Erubis::Helpers::RailsHelper.show_src = false
